@@ -44,7 +44,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     auto glview = director->getOpenGLView();
     if(!glview)
     {
-        glview = GLViewImpl::create("Eat Fish");
+        //glview = GLViewImpl::create("Eat Fish");
+          glview = GLViewImpl::createWithFullScreen("Eat Fish");
 		glview->setFrameSize(GAME_CONFIG_WINDOW_WIDTH, GAME_CONFIG_WINDOW_HEIGHT);
         director->setOpenGLView(glview);
     }
@@ -56,7 +57,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     director->setAnimationInterval(1.0 / 60);
 
     // Set the design resolution
-    glview->setDesignResolutionSize(GAME_CONFIG_WINDOW_WIDTH, GAME_CONFIG_WINDOW_HEIGHT, ResolutionPolicy::SHOW_ALL);
+    glview->setDesignResolutionSize(GAME_CONFIG_WINDOW_WIDTH, GAME_CONFIG_WINDOW_HEIGHT, ResolutionPolicy::EXACT_FIT);
 
     register_all_packages();
 
