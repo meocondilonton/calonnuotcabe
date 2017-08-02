@@ -45,6 +45,7 @@ map<string, string> Strings::stringsEN()
 	strings.insert(pair<string, string>("help_lab3", "Eat enough fish to grow"));
 
 	//暂停界面
+    strings.insert(pair<string, string>("play_other", "Play"));
 	strings.insert(pair<string, string>("pause_resume", "Resume"));
 	strings.insert(pair<string, string>("pause_sound", "Sound"));
 	strings.insert(pair<string, string>("pause_effect", "Effect"));

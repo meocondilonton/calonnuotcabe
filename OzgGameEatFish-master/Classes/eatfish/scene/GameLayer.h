@@ -89,7 +89,8 @@ public:
         CLEAR_NODE = 27,
         BTN_NEXT = 28,
         GAMEOVER_NODE = 29,
-        BTN_RESTART = 30
+        BTN_RESTART = 30,
+        BTN_PLAY_OTHER = 31
         
 	};
 

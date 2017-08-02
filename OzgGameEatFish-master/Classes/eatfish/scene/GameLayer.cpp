@@ -682,9 +682,23 @@ void GameLayer::scenePause()
     btnExit->setTitleText(this->m_strings["pause_exit"]);
     pauseNode->addChild(btnExit);
     
-    Label *labGithub = Label::createWithSystemFont("github:https://github.com/ouzhigang/OzgGameEatFish", GAME_CONFIG_GLOBAL_FONTNAME_01, 20);
-    labGithub->setPosition(Vec2(650, 210));
+    
+    
+    Label *labGithub = Label::createWithSystemFont("Onet Connect Animal? \n Is simple yet addicting pair solving \n puzzle game or matching game with a fresh gameplay.\n  If you like connect / matching game, \n then your will love to play Onet Connect Animal?.", GAME_CONFIG_GLOBAL_FONTNAME_01,  20, Size::ZERO, TextHAlignment::CENTER, TextVAlignment::CENTER);
+    labGithub->setPosition(Vec2(650, 280));
     pauseNode->addChild(labGithub);
+    
+    Button *btnPlay = Button::create();
+    btnPlay->loadTextureNormal("btn1_up.png");
+    btnPlay->loadTexturePressed("btn1_dw.png");
+    btnPlay->setPosition(Vec2(650, 100));
+    btnPlay->addTouchEventListener(CC_CALLBACK_2(GameLayer::onButton, this));
+    btnPlay->setTag((int)ChildTag::BTN_PLAY_OTHER);
+    btnPlay->setTitleFontName(GAME_CONFIG_GLOBAL_FONTNAME_01);
+    btnPlay->setTitleFontSize(22.0f);
+    btnPlay->setTitleText(this->m_strings["play_other"]);
+    pauseNode->addChild(btnPlay);
+    
     
 }
 
@@ -705,6 +719,14 @@ void GameLayer::onButton(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventT
         {
             switch (btn->getTag())
             {
+                case ((int)ChildTag::BTN_PLAY_OTHER):
+                {
+                    //暂停游戏
+                    SimpleAudioEngine::getInstance()->playEffect("audios_btn.wav");
+                    
+                     CCApplication::sharedApplication()->openURL("https://itunes.apple.com/us/app/onet-connect-animal-2017/id1190904357?ls=1&mt=8");
+                }
+                    break;
                 case ((int)ChildTag::BTN_PAUSE):
                 {
                     //暂停游戏
