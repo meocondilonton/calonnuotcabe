@@ -1,0 +1,6 @@
+framework module Pods_OzgGameEatFish_master_mobile {
+  umbrella header "Pods-OzgGameEatFish-master-mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -27,6 +27,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "GoogleMobileAds/GoogleMobileAds.h"
 
 @implementation AppController
 
@@ -85,7 +86,8 @@ static AppDelegate s_sharedApplication;
     cocos2d::Director::getInstance()->setOpenGLView(glview);
 
     app->run();
-
+    
+    [GADMobileAds configureWithApplicationID:@"YOUR_ADMOB_APP_ID"];
     return YES;
 }
 
