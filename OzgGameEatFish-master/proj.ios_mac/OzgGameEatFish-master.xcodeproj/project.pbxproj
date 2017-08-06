@@ -12,6 +12,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		4128FE1D1F3773E30020CCC8 /* iOSHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4128FE1C1F3773E30020CCC8 /* iOSHelper.mm */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -156,6 +157,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2C72A4157AF6E82047EB2C2D /* Pods-OzgGameEatFish-master-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzgGameEatFish-master-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-OzgGameEatFish-master-mobile/Pods-OzgGameEatFish-master-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		4128FE1B1F3773E30020CCC8 /* iOSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSHelper.h; path = ios/iOSHelper.h; sourceTree = SOURCE_ROOT; };
+		4128FE1C1F3773E30020CCC8 /* iOSHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOSHelper.mm; path = ios/iOSHelper.mm; sourceTree = SOURCE_ROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -329,6 +332,8 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				4128FE1B1F3773E30020CCC8 /* iOSHelper.h */,
+				4128FE1C1F3773E30020CCC8 /* iOSHelper.mm */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -831,6 +836,7 @@
 				84C1763D1F29E42E004BA968 /* BaseEnemyFishNode.cpp in Sources */,
 				84C176441F29E42E004BA968 /* PlayerFishNode.cpp in Sources */,
 				84C176461F29E42E004BA968 /* GameLayer.cpp in Sources */,
+				4128FE1D1F3773E30020CCC8 /* iOSHelper.mm in Sources */,
 				84C1763C1F29E42E004BA968 /* AppDelegate.cpp in Sources */,
 				84C176431F29E42E004BA968 /* JellyfishNode.cpp in Sources */,
 				84C176491F29E42E004BA968 /* Strings.cpp in Sources */,

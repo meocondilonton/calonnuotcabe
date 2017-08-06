@@ -8,6 +8,7 @@
 #include "GameConfig.h"
 #include "Strings.h"
 #include "Utility.h"
+#include "iOSHelper.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -699,6 +700,8 @@ void GameLayer::scenePause()
     btnPlay->setTitleText(this->m_strings["play_other"]);
     pauseNode->addChild(btnPlay);
     
+
+   
     
 }
 
@@ -965,6 +968,7 @@ void GameLayer::onButton(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventT
 //private
 void GameLayer::gameStart()
 {
+     iOSHelper::showAdmobInters();
 	SimpleAudioEngine::getInstance()->playEffect("audios_fishstart.mp3");
 
 	Node *fishNode = this->getChildByTag((int)ChildTag::FISH_NODE);

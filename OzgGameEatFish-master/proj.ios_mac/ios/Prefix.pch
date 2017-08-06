@@ -10,3 +10,7 @@
 #ifdef __cplusplus
 	#include "cocos2d.h"
 #endif
+
+#define ADMOB_FULLSCREEN_KEY                   @"ca-app-pub-4050289509193246/3427794454"
+
+#define APP_APPLE_ID  @"1266153159"

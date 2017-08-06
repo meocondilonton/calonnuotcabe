@@ -27,7 +27,6 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
-#import "GoogleMobileAds/GoogleMobileAds.h"
 
 @implementation AppController
 
@@ -87,8 +86,34 @@ static AppDelegate s_sharedApplication;
 
     app->run();
     
-    [GADMobileAds configureWithApplicationID:@"YOUR_ADMOB_APP_ID"];
+    
+    [self setupAdmobInters];
+
     return YES;
+}
+
+- (void)setupAdmobInters
+{
+    self.interstitial = [[GADInterstitial alloc] init];
+    self.interstitial.adUnitID = ADMOB_FULLSCREEN_KEY ;
+    GADRequest *request = [GADRequest request];
+    // Requests test ads on test devices.
+    //    request.testDevices = @[@"2077ef9a63d2b398840261c8221a0c9b"];
+    [self.interstitial loadRequest:request];
+}
+
+-(void)showAdmobInters
+{
+    
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController: _viewController];
+        GADRequest *request = [GADRequest request];
+        [self.interstitial loadRequest:request];
+    }else{
+        [self setupAdmobInters];
+    }
+    
+    
 }
 
 
