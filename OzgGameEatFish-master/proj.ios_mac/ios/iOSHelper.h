@@ -20,8 +20,8 @@ public:
    
     // Admob
     static void rateApp();
-//    static void hideAdmobBanner();
-//    static void showAdmobBanner();
+    static void hideAdmobBanner();
+    static void showAdmobBanner();
     static void showAdmobInters();
     static cocos2d::CCSize getWinSize();
 };

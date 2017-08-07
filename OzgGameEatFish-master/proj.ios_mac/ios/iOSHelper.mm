@@ -20,15 +20,15 @@ void iOSHelper::rateApp(){
 
 
 
-//void iOSHelper::hideAdmobBanner(){
-//    AppController *appDelegate = (AppController *)[[UIApplication sharedApplication] delegate];
-//    [appDelegate hideAdmobBanner];
-//}
-//
-//void iOSHelper::showAdmobBanner(){
-//    AppController *appDelegate = (AppController *)[[UIApplication sharedApplication] delegate];
-//    [appDelegate showAdmobBanner];
-//}
+void iOSHelper::hideAdmobBanner(){
+    AppController *appDelegate = (AppController *)[[UIApplication sharedApplication] delegate];
+    [appDelegate hideAdmobBanner];
+}
+
+void iOSHelper::showAdmobBanner(){
+    AppController *appDelegate = (AppController *)[[UIApplication sharedApplication] delegate];
+    [appDelegate showAdmobBanner];
+}
 
 void iOSHelper::showAdmobInters(){
     AppController *appDelegate = (AppController *)[[UIApplication sharedApplication] delegate];

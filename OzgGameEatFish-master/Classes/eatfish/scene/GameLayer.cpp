@@ -539,6 +539,8 @@ void GameLayer::update(float delay)
                                     btnRestart->setTitleText(this->m_strings["gameover_restart"]);
                                     gameoverNode->addChild(btnRestart);
                                     
+                                    iOSHelper::showAdmobInters();
+                                    
 								}
 								else
 								{
@@ -577,6 +579,7 @@ void GameLayer::itemMoveEnd(cocos2d::Node* sender)
 
 void GameLayer::scenePause()
 {
+    
     if(this->getChildByTag((int)ChildTag::PAUSE_NODE) || this->getChildByTag((int)ChildTag::GAMEOVER_NODE) || this->getChildByTag((int)ChildTag::CLEAR_NODE))
         return;
     
@@ -968,7 +971,7 @@ void GameLayer::onButton(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventT
 //private
 void GameLayer::gameStart()
 {
-     iOSHelper::showAdmobInters();
+    
 	SimpleAudioEngine::getInstance()->playEffect("audios_fishstart.mp3");
 
 	Node *fishNode = this->getChildByTag((int)ChildTag::FISH_NODE);
