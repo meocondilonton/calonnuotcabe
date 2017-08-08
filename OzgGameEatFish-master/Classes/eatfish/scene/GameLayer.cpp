@@ -579,6 +579,7 @@ void GameLayer::itemMoveEnd(cocos2d::Node* sender)
 
 void GameLayer::scenePause()
 {
+    iOSHelper::showAdmobBanner();
     
     if(this->getChildByTag((int)ChildTag::PAUSE_NODE) || this->getChildByTag((int)ChildTag::GAMEOVER_NODE) || this->getChildByTag((int)ChildTag::CLEAR_NODE))
         return;
@@ -743,6 +744,8 @@ void GameLayer::onButton(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventT
                     break;
                 case ((int)ChildTag::BTN_RESUME):
                 {
+                    iOSHelper::hideAdmobBanner();
+                    
                     //继续游戏
                     
                     SimpleAudioEngine::getInstance()->playEffect("audios_btn.wav");
@@ -818,6 +821,7 @@ void GameLayer::onButton(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventT
                     break;
                 case ((int)ChildTag::BTN_EXIT):
                 {
+                     iOSHelper::hideAdmobBanner();
                     //退出游戏
                     LayerColor *maskLayer = LayerColor::create(Color4B(0, 0, 0, 180), Director::getInstance()->getWinSize().width, Director::getInstance()->getWinSize().height);
 					maskLayer->setTag((int)ChildTag::MASK);

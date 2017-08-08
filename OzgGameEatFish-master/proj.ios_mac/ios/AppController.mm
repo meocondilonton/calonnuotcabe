@@ -126,6 +126,31 @@ static AppDelegate s_sharedApplication;
     /* cocos2d::Director::getInstance()->pause(); */
 }
 
+-(void)showAdmobBanner
+{
+    [_vAd removeFromSuperview];
+    if (IPAD) {
+        _vAd = [[GADBannerView alloc]initWithFrame:CGRectMake(0, window.frame.size.height - ADMOB_HEIGHT * 2 , window.frame.size.width , ADMOB_HEIGHT * 2)];
+    }else{
+        _vAd = [[GADBannerView alloc]initWithFrame:CGRectMake(0, window.frame.size.height - ADMOB_HEIGHT , window.frame.size.width , ADMOB_HEIGHT)];
+    }
+    
+    
+    _vAd.adUnitID = ADMOB_BANNER_KEY;
+    _vAd.rootViewController = window.rootViewController;
+    GADRequest *request = [GADRequest request];
+    [_vAd loadRequest:request];
+    
+    [window addSubview:_vAd];
+    
+}
+
+
+-(void)hideAdmobBanner
+{
+    [_vAd removeFromSuperview];
+}
+
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.

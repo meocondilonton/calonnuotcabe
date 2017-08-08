@@ -11,6 +11,10 @@
 	#include "cocos2d.h"
 #endif
 
+#define IPAD UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+#define ADMOB_HEIGHT                          50
+ 
+
 #define ADMOB_FULLSCREEN_KEY                   @"ca-app-pub-4050289509193246/3427794454"
 #define ADMOB_BANNER_KEY                   @"ca-app-pub-4050289509193246/6690529849"
 

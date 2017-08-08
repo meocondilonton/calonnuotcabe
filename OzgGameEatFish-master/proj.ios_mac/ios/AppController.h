@@ -9,8 +9,13 @@
 
 @property(nonatomic, readonly) RootViewController* viewController;
 @property(nonatomic, strong) GADInterstitial *interstitial;
+@property (retain, nonatomic) IBOutlet GADBannerView *vAd;
+
 - (void)rateApp;
 -(void)showAdmobInters;
+
+-(void)showAdmobBanner;
+-(void)hideAdmobBanner;
 
 @end
 
