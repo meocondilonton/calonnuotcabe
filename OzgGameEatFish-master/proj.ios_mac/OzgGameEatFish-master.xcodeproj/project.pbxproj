@@ -13,6 +13,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		4128FE1D1F3773E30020CCC8 /* iOSHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4128FE1C1F3773E30020CCC8 /* iOSHelper.mm */; };
+		418399971F3A0EE000252BE8 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 418399951F3A0EE000252BE8 /* Icon-87.png */; };
+		418399981F3A0EE000252BE8 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 418399961F3A0EE000252BE8 /* Icon-180.png */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -159,6 +161,8 @@
 		2C72A4157AF6E82047EB2C2D /* Pods-OzgGameEatFish-master-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzgGameEatFish-master-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-OzgGameEatFish-master-mobile/Pods-OzgGameEatFish-master-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		4128FE1B1F3773E30020CCC8 /* iOSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSHelper.h; path = ios/iOSHelper.h; sourceTree = SOURCE_ROOT; };
 		4128FE1C1F3773E30020CCC8 /* iOSHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOSHelper.mm; path = ios/iOSHelper.mm; sourceTree = SOURCE_ROOT; };
+		418399951F3A0EE000252BE8 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		418399961F3A0EE000252BE8 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -437,6 +441,8 @@
 				521A8E6319F0C34300D177D7 /* Default-736h@3x.png */,
 				5087E77217EB970100C73F5D /* Default-568h@2x.png */,
 				5087E77317EB970100C73F5D /* Default.png */,
+				418399951F3A0EE000252BE8 /* Icon-87.png */,
+				418399961F3A0EE000252BE8 /* Icon-180.png */,
 				5087E77417EB970100C73F5D /* Default@2x.png */,
 				50EF62A017ECD613001EB2F8 /* Icon-29.png */,
 				50EF62A117ECD613001EB2F8 /* Icon-50.png */,
@@ -652,7 +658,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = ZTA488SNYR;
+						DevelopmentTeam = QA84AQQV8V;
 					};
 				};
 			};
@@ -754,6 +760,7 @@
 				84C176641F29E42E004BA968 /* Fishall.plist in Resources */,
 				84C176661F29E42E004BA968 /* Fishtales.plist in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				418399971F3A0EE000252BE8 /* Icon-87.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				84C1765F1F29E42E004BA968 /* dialog_bg.png in Resources */,
 				84C176501F29E42E004BA968 /* audios_eatgold.mp3 in Resources */,
@@ -762,6 +769,7 @@
 				84C176601F29E42E004BA968 /* dialog_btn_no_1.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				84C176681F29E42E004BA968 /* arial.ttf in Resources */,
+				418399981F3A0EE000252BE8 /* Icon-180.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -883,7 +891,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = ZTA488SNYR;
+				DEVELOPMENT_TEAM = QA84AQQV8V;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -905,14 +913,14 @@
 					"$(SRCROOT)/Classes/eatfish/element/**",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philong.hungryfish;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -929,7 +937,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = ZTA488SNYR;
+				DEVELOPMENT_TEAM = QA84AQQV8V;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -949,14 +957,14 @@
 					"$(SRCROOT)/Classes/eatfish/element/**",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philong.hungryfish;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
