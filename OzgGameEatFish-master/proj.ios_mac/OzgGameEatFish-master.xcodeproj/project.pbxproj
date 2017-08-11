@@ -658,7 +658,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = QA84AQQV8V;
+						DevelopmentTeam = ZTA488SNYR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -893,7 +893,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = QA84AQQV8V;
+				DEVELOPMENT_TEAM = ZTA488SNYR;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -922,7 +922,7 @@
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.philong.hungryfish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
@@ -941,7 +941,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = QA84AQQV8V;
+				DEVELOPMENT_TEAM = ZTA488SNYR;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -968,7 +968,7 @@
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.philong.hungryfish;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
