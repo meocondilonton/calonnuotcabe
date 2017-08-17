@@ -658,8 +658,8 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = ZTA488SNYR;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = FWVRV6886P;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -891,9 +891,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = ZTA488SNYR;
+				DEVELOPMENT_TEAM = FWVRV6886P;
 				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -922,8 +922,9 @@
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenlongxl.calonnuotcabe;
+				PROVISIONING_PROFILE = "3c60b08c-542b-4bba-8610-c3dd4bbc9119";
+				PROVISIONING_PROFILE_SPECIFIER = calonancabe;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -939,9 +940,9 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COMPRESS_PNG_FILES = NO;
-				DEVELOPMENT_TEAM = ZTA488SNYR;
+				DEVELOPMENT_TEAM = FWVRV6886P;
 				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -968,8 +969,9 @@
 					"$(_COCOS_LIB_IOS_END)",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenphilong080390.fisheatfish;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nguyenlongxl.calonnuotcabe;
+				PROVISIONING_PROFILE = "3c60b08c-542b-4bba-8610-c3dd4bbc9119";
+				PROVISIONING_PROFILE_SPECIFIER = calonancabe;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
